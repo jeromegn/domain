@@ -331,7 +331,7 @@ impl<'a> Query<'a> {
         message.additional()
     }
 
-    async fn run_query(
+    pub async fn run_query(
         &mut self,
         message: &mut QueryMessage,
     ) -> Result<Answer, io::Error> {
